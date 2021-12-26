@@ -59,5 +59,4 @@ class Interface
     puts
     puts "Вы проиграли. У вас в банке: $#{bank}."
   end
-	
 end

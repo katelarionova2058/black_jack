@@ -1,6 +1,5 @@
 require_relative 'interface'
 require_relative 'player'
-require_relative 'diller'
 require_relative 'hand'
 require_relative 'deck'
 
@@ -10,7 +9,7 @@ class Main
 		interface.get_name
 		player = gets.chomp
 		@player = Player.new player
-		@diller = Diller.new ('Diller')
+		@diller = Player.new ('Diller')
 		@deck = Deck.new
 		start
 	end

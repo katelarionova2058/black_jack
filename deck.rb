@@ -1,7 +1,7 @@
 require_relative 'card'
 
 class Deck
-attr_accessor :random_card
+  attr_accessor :random_card
 
   def initialize
     @start_deck = []
@@ -11,11 +11,6 @@ attr_accessor :random_card
 
   def create_card
     @random_card = @deck.shift
-    @deck.delete(random_card)
-  end
-
-  def make_third_card
-    @third_card = create_card.random_card
   end
 
   private
