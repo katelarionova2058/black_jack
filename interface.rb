@@ -1,17 +1,17 @@
 class Interface
-	def get_name
-		puts "Введите свое имя"
-	end
+  def get_name
+    puts "Введите свое имя"
+  end
 
-	def play
-		puts "Игра началась"
-	end
+  def play
+    puts "Игра началась"
+  end
 
-	def game_over
-		puts "Игра завершена"
-	end
+  def game_over
+    puts "Игра завершена"
+  end
 
-	def choice_menu(cards, score, player_bank, dealer_bank)
+  def choice_menu(cards, score, player_bank, dealer_bank)
     puts "Ваши карты: #{cards}. Ваш счёт: #{score}. Ваш банк: $#{player_bank}"
     puts "Карты дилера [**, **]. Счёт дилера [**]. Банк дилера: $#{dealer_bank}"
     puts '0 - закончить игру'
